@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Church Website - Header</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+  <!-- Logo -->
+  <div class="logo">
+    <img src="logo.png" alt="Church Logo">
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="sermon.html" class="nav-link">Sermons</a></li>
+      <li><a href="event.html" class="nav-link">Events</a></li>
+      <li><a href="ministry.html" class="nav-link">Ministries</a></li>
+      <li><a href="donation.html" class="nav-link">Give</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hamburger Menu for Mobile -->
+  <div class="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+</header>
+
+  <!-- Hero Section (Placeholder) -->
+  
+    
+  
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>Soul Builders Int'l</span></h1>
+      <p class="tagline">Your spiritual home for faith, hope, and love.</p>
+
+      <!-- Countdown Timer -->
+      <div class="countdown-timer">
+        <h3>Next Service Starts In:</h3>
+        <div class="timer">
+          <div class="timer-box">
+            <span id="days">00</span>
+            <p>Days</p>
+          </div>
+          <div class="timer-box">
+            <span id="hours">00</span>
+            <p>Hours</p>
+          </div>
+          <div class="timer-box">
+            <span id="minutes">00</span>
+            <p>Minutes</p>
+          </div>
+          <div class="timer-box">
+            <span id="seconds">00</span>
+            <p>Seconds</p>
+          </div>
+        </div>
+      </div>
+</a>
+      <!-- CTA Buttons -->
+      <div class="cta-buttons">
+        <a href="sermon.html" target="_blank">
+        <button class="cta-button">Join Us Live</button>
+        </a>
+        <a href="contact.html" target="_blank">
+        <button class="cta-button outline">Plan a Visit</button>
+        </a>
+      </div>
+
+      <!-- Founder Section -->
+      <div class="founder-section">
+        <div class="founder-image">
+          <img src="ass.jpg" alt="Founder">
+        </div>
+        <div class="founder-info">
+          <h3>Apostle Dominic<br> Brown</h3>
+          <p>Founder & Senior Pastor</p>
+          <a href="about.html" class="founder-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="hero-image">
+      <img src="./" alt="">
+    </div>
+  </section>
+
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- About Us Section -->
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Soul Builders int'l is a community of believers dedicated to spreading the love of Christ.</p>
+        <div class="newsletter">
+          <h4>Subscribe to Our Newsletter</h4>
+          <form id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sermons.html">Sermons</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="donation.html">Give</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Information Section -->
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i>D'Ball Ase Green Compound, Tarkwa Ghana</p>
+        <p><i class="fas fa-phone"></i> (+233) 0208128560 / (+233) 0247264811</p>
+        <p><i class="fas fa-envelope"></i> info@soulbuilderschapel.com</p>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Soul Builders Int'l. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <script>
+    // Set the date for the countdown (YYYY, MM (0-based), DD, HH, MM, SS)
+const countdownDate = new Date(2025, 3, 21, 10, 0, 0).getTime();
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const timeLeft = countdownDate - now;
+
+  // Calculate days, hours, minutes, and seconds
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+  // Update the countdown timer
+  document.getElementById('days').innerText = String(days).padStart(2, '0');
+  document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+  document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+  document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+
+  // If the countdown is over, display a message
+  if (timeLeft < 0) {
+    clearInterval(countdownInterval);
+    document.querySelector('.countdown-timer').innerHTML = '<h3>Service has started!</h3>';
+  }
+}
+
+// Update the countdown every second
+const countdownInterval = setInterval(updateCountdown, 1000);
+
+// Initial call to avoid delay
+updateCountdown();
+
+
+
+
+// JavaScript for Newsletter Form
+document.getElementById('newsletterForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = e.target.querySelector('input').value;
+  alert(`Thank you for subscribing, ${email}!`);
+  e.target.reset();
+});
+
+
+
+// JavaScript for Hamburger Menu
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+  </script>
+</body>
+</html>

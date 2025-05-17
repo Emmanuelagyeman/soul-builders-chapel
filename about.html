@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soul Builders Int'l - About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <!-- Logo -->
+    <div class="logo">
+      <img src=".logo.png" alt="Church Logo">
+    </div>
+  
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="event.html" class="nav-link">Events</a></li>
+        <li><a href="ministry.html" class="nav-link">Ministries</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Hamburger Menu for Mobile -->
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- About Us Page -->
+  <section class="about-us">
+    <!-- Mission Statement -->
+    <div class="mission-statement">
+      <h2>Our Mission</h2>
+      <p>To spread the love of Christ and build a community of faith, hope, and love.</p>
+    </div>
+
+    <!-- Church History -->
+    <div class="church-history">
+      <h2>Our History</h2>
+      <p>Founded in 2021, Soul Builders chapel has been a beacon of hope in our community. From humble beginnings, we have grown into a vibrant family of believers.</p>
+      <div class="history-timeline">
+        <div class="timeline-item">
+          <h3>1995</h3>
+          <p>Grace Church was founded by Apostle Dominic Brown with just few members.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2023</h3>
+          <p>We moved to our current location, accommodating over 500 members.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2025</h3>
+          <p>Launched online services, reaching a global audience.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leadership Section -->
+    <div class="leadership">
+      <h2>Our Leadership</h2>
+      <div class="leader-cards">
+        <div class="leader-card">
+          <img src="IMG-20240815-WA0008.jpg" alt="Pastor John Doe">
+          <h3>Apostle Dominic Brown</h3>
+          <p>Senior Pastor</p>
+          <a href="#pastor-john" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="leader-card">
+          <img src="brown 2.jpg" alt="Pastor Jane Atta">
+          <h3>Pastor Jane Atta</h3>
+          <p>Associate Pastor</p>
+          <a href="#pastor-jane" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Values -->
+    <div class="core-values">
+      <h2>Our Core Values</h2>
+      <div class="values-list">
+        <div class="value-item">
+          <i class="fas fa-heart"></i>
+          <h3>Love</h3>
+          <p>We believe in showing unconditional love to everyone.</p>
+        </div>
+        <div class="value-item">
+          <i class="fas fa-cross"></i>
+          <h3>Faith</h3>
+          <p>We are committed to growing in faith and trust in God.</p>
+        </div>
+        <div class="value-item">
+          <i class="fas fa-hands-helping"></i>
+          <h3>Service</h3>
+          <p>We serve our community with humility and compassion.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Read More Section (Hidden by Default) -->
+    <div id="pastor-john" class="read-more-content">
+      <h3>About Apostle Dominic Brown</h3>
+      <p>Apostle Dominic has been serving as the Senior Pastor of Soul Builders Int'l since its inception in 1995. He is passionate about teaching the Word of God and building a strong community.</p>
+      <button class="close-btn">Close</button>
+    </div>
+
+    <div id="pastor-jane" class="read-more-content">
+      <h3>About Pastor Jane Smith</h3>
+      <p>Pastor Jane Smith joined Soul Builders Int'l in 2005 and serves as the Associate Pastor. She focuses on youth ministry and community outreach programs.</p>
+      <button class="close-btn">Close</button>
+    </div>
+  </section>
+
+  <script>
+      // Functionality for Read More Links
+document.querySelectorAll('.read-more').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href');
+    document.querySelector(targetId).style.display = 'block';
+  });
+});
+
+// Functionality for Close Buttons
+document.querySelectorAll('.close-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    button.parentElement.style.display = 'none';
+  });
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soul Builders Int'l- Give/Donate</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Give/Donate Page -->
+  <section class="give-donate">
+    <!-- Give Hero Section -->
+    <div class="give-hero">
+      <h1>Give Generously</h1>
+      <p>Your generosity helps us spread the love of Christ and serve our community.</p>
+    </div>
+
+    <!-- Donation Options -->
+    <div class="donation-options">
+      <h2>Ways to Give</h2>
+      <div class="options-grid">
+        <div class="option-card">
+          <i class="fas fa-hand-holding-heart"></i>
+          <h3>One-Time Gift</h3>
+          <p>Make a single donation to support our mission.</p>
+          <a href="#one-time" class="cta-button">Donate Now</a>
+        </div>
+        <div class="option-card">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>Recurring Gift</h3>
+          <p>Set up monthly or weekly donations.</p>
+          <a href="#recurring" class="cta-button">Set Up</a>
+        </div>
+        <div class="option-card">
+          <i class="fas fa-gift"></i>
+          <h3>Special Offering</h3>
+          <p>Give towards specific projects or events.</p>
+          <a href="#special" class="cta-button">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Donation Form -->
+    <div class="donation-form">
+      <h2>Make a Donation</h2>
+      <form id="donationForm">
+        <div class="form-group">
+          <label for="amount">Donation Amount ($)</label>
+          <input type="number" id="amount" name="amount" min="1" required>
+        </div>
+        <div class="form-group">
+          <label for="frequency">Frequency</label>
+          <select id="frequency" name="frequency" required>
+            <option value="one-time">One-Time</option>
+            <option value="monthly">Monthly</option>
+            <option value="weekly">Weekly</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="payment">Payment Method</label>
+          <select id="payment" name="payment" required>
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank-transfer">Bank Transfer</option>
+            <option value="Mobile Money">Mobile Money</option>
+            <option value="USDT">USDT</option>
+          </select>
+        </div>
+        <button type="submit" class="cta-button">Donate Now</button>
+      </form>
+    </div>
+
+    <!-- Impact Stories -->
+    <div class="impact-stories">
+      <h2>Your Impact</h2>
+      <div class="stories-grid">
+        <div class="story-card">
+          <img src="annie-spratt-427337-unsplash.jpg" alt="Impact Story 1">
+          <h3>Community Outreach</h3>
+          <p>Your donations helped feed 500 families in need.</p>
+        </div>
+        <div class="story-card">
+          <img src="Campus-Students-Fellowship.jpg" alt="Impact Story 2">
+          <h3>Youth Programs</h3>
+          <p>We provided mentorship and resources to 200 youth.</p>
+        </div>
+        <div class="story-card">
+          <img src="f34b3538f5b55c37425452f5a01f7602.jpg" alt="Impact Story 3">
+          <h3>Church Growth</h3>
+          <p>Your support enabled us to expand our facilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Soul Builders Int'l is a community of believers dedicated to spreading the love of Christ.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="donation.html">Give</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>D'Ball Ase Green Compound, Tarkwa Ghana</p>
+        <p>Email: info@soulbuilderschapel.com</p>
+        <p>Phone: (+233) 0208128560 / (+233) 0247264811</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Soul Builders Int'l. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+      
+      
+      // JavaScript for Donation Form
+document.getElementById('donationForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const donationData = Object.fromEntries(formData.entries());
+  alert(`Thank you for your donation of $${donationData.amount}!`);
+  e.target.reset();
+});
+      
+  </script>
+</body>
+</html>
